@@ -3,7 +3,7 @@
 
 ```JSON
 {
-    "360":{
+    "avenger":{
         "class":"common",
         "clsid":"{1B030824-BDBC-41C8-9F7E-DE124FB14860}",
         "progid":"AVENGER.AvengerCtrl.1",
