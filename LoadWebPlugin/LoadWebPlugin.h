@@ -1,10 +1,7 @@
 #pragma once
 
-#include <Objbase.h>
-#include <unordered_map>
-#include "../../CommonFunction/Singleton.h"
-#include "../../CommonFunction/Utility.h"
 #include "WebPlugin.h"
+#include "../../CommonFunction/Singleton.h"
 
 
 bool LoadWebPlugin(LPCTSTR configFile);

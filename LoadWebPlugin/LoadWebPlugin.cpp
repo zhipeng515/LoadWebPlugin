@@ -97,7 +97,7 @@ bool WebPluginManager::Init(LPCTSTR configFile)
 			StdString strFile = Utility::ToStdString(value["file"].get<string>().c_str());
 
 			MacroReplace(strFile);
-			if (!PathFileExists(strFile.c_str()))
+			if (_taccess(strFile.c_str(), 0) == -1)
 				continue;
 
 			WebPlugin * plugin = NULL;
@@ -165,7 +165,7 @@ bool WebPluginManager::IsPluginInstalled(LPCOLESTR progID)
 		return false;
 	reg.Close();
 
-	return PathFileExists(szValue);
+	return _taccess(szValue, 0) != -1;
 }
 
 WebPlugin * WebPluginManager::GetLoadedPluginByName(LPCTSTR name) {

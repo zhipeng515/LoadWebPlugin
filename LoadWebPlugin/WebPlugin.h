@@ -15,8 +15,8 @@ public:
 		strProgID = progid;
 		strFileName = filename;
 		strName = name;
-		::CLSIDFromString(strClsID.c_str(), &clsID);
 		hKey = (HKEY)(0x8765 + rand() % 0xFFFF);
+		::CLSIDFromString(strClsID.c_str(), &clsID);
 	}
 	virtual bool Load() = 0;
 	virtual void Unload() = 0;
