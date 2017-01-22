@@ -28,3 +28,8 @@
         "file":"${EXE_PATH}\\plugin\\Fancy\\fancygame.ocx"
     }
 }
+```
+
+依赖
+
+* https://github.com/zhipeng515/CommonFunction.git
