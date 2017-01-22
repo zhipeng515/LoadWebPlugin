@@ -115,7 +115,8 @@ bool WebPluginManager::Init(LPCTSTR configFile)
 	}
 	catch (exception& e)
 	{
-		_ASSERT_EXPR(false, Utility::ToStdString(e.what()).c_str());
+		_CRT_UNUSED(e);
+		_ASSERT_EXPR(false, e.what());
 		return false;
 	}
 
