@@ -33,3 +33,4 @@
 依赖
 
 * https://github.com/zhipeng515/CommonFunction.git
+* https://github.com/zhipeng515/json.git
